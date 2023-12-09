@@ -1,128 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Noa Moreau</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
+  <head>
+    <title>Noa Moreau</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-        <link rel="stylesheet" href="./style/style.css">
-    </head>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-        </header>
-        <main>
-            <section id="home" class="part">
-                <!-- Nav tabs -->
-                <ul
-                    class="nav nav-tabs"
-                    id="navId"
-                    role="tablist"
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <section id="home" class="part">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="navId" role="tablist">
+          <li class="nav-item">
+            <a
+              href="#apropos"
+              class="nav-link active"
+              data-bs-toggle="tab"
+              aria-current="page"
+              >a propos de moi</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="#formation"
+              class="nav-link active"
+              data-bs-toggle="tab"
+              aria-current="page"
+              >formation</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="#projet"
+              class="nav-link active"
+              data-bs-toggle="tab"
+              aria-current="page"
+              >projets</a
+            >
+          </li>
+        </ul>
+
+        <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+        <script>
+          var triggerEl = document.querySelector("#navId a");
+          bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+        </script>
+
+        <h1>
+          <strong>NOA<br />MOREAU</strong>
+        </h1>
+      </section>
+      <div id="curve2"></div>
+      <div id="curve1"></div>
+      <div id="curve3"></div>
+      <div id="curve4"></div>
+      <section id="apropos" class="part"></section>
+      <section id="formation" class="part">
+        <ul class="timeline">
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">BUT INFO</span>
+                <span class="time-wrapper"
+                  ><span class="time">2022 - aujourd'hui</span></span
                 >
-                    <li class="nav-item">
-                        <a
-                            href="#apropos"
-                            class="nav-link active"
-                            data-bs-toggle="tab"
-                            aria-current="page"
-                            >a propos de moi</a
-                        >
-                    </li>
+              </div>
+              <div class="desc">Ma formation en cours à l'iut A de Lille</div>
+            </div>
+          </li>
 
-                    <li class="nav-item">
-                        <a
-                            href="#formation"
-                            class="nav-link active"
-                            data-bs-toggle="tab"
-                            aria-current="page"
-                            >formation</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a
-                            href="#projet"
-                            class="nav-link active"
-                            data-bs-toggle="tab"
-                            aria-current="page"
-                            >projets</a
-                        >
-                    </li>
-                </ul>
-                
-                
-                <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-                <script>
-                    var triggerEl = document.querySelector("#navId a");
-                    bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
-                </script>
-                
-                <h1><strong>NOA<br>MOREAU</strong></h1>
-            </section>
-            <div id="curve2"></div> <div id="curve1"></div> <div id="curve3"></div> <div id="curve4"></div>
-            <section id="apropos" class="part">
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="flag">BAC generale</span>
+                <span class="time-wrapper"
+                  ><span class="time">2019 - 2022</span></span
+                >
+              </div>
+              <div class="desc">
+                Spécialité NSI et Mathématique avec option Mathématique experte
+                <br />
+                obtenue avec mention
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="projet" class="part">
+        <div id="box"></div>
 
-            </section>
-            <section id="formation" class="part">
-                
-<ul class="timeline">
+        <img
+          src="https://en.js.cx/clipart/soccer-gate.svg"
+          id="gate"
+          class="droppable"
+        />
+      </section>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-	<!-- Item 1 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">BUT INFO</span>
-				<span class="time-wrapper"><span class="time">2022 - aujourd'hui</span></span>
-			</div>
-			<div class="desc">Ma formation en cours à l'iut A de Lille</div>
-		</div>
-	</li>
-  
-	<!-- Item 2 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">BAC generale</span>
-				<span class="time-wrapper"><span class="time">2019 - 2022</span></span>
-			</div>
-			<div class="desc">Spécialité NSI et Mathématique avec option Mathématique experte <br> obtenue avec mention</div>
-		</div>
-	</li>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
 
-  
-</ul>
-
-            </section>
-            <section id="projet" class="part">
-                
-            </section>
-            
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
