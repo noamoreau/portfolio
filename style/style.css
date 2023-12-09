@@ -429,11 +429,3 @@ body {
   height: 100px;
   background-color: #ccc;
 }
-
-#gate {
-  cursor: pointer;
-  margin-bottom: 100px;
-  width: 83px;
-  height: 46px;
-  background-color: red;
-}
