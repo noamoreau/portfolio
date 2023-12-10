@@ -54,7 +54,7 @@ body {
   height: 25vh;
   width: 200vw;
   position: absolute;
-  bottom: -5vh;
+  bottom: -7vh;
   right: -50px;
   overflow: hidden;
 }
@@ -65,7 +65,7 @@ body {
   height: 25vh;
   width: 200vw;
   position: absolute;
-  bottom: -3vh;
+  bottom: -5vh;
   right: -50px;
   overflow: hidden;
 }
@@ -76,7 +76,7 @@ body {
   height: 25vh;
   width: 200vw;
   position: absolute;
-  bottom: -7vh;
+  bottom: -9vh;
   right: -50px;
   overflow: hidden;
 }
@@ -87,7 +87,7 @@ body {
   height: 25vh;
   width: 200vw;
   position: absolute;
-  bottom: -9vh;
+  bottom: -11vh;
   right: -50px;
   overflow: hidden;
 }
@@ -420,4 +420,11 @@ body {
   background-image: url("../images/wickedbackground.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
 }
