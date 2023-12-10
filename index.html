@@ -20,29 +20,85 @@
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
     <main>
       <section id="home" class="part">
+        <nav class="navbar navbar-light bg-light fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Noa Moreau</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Offcanvas
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#apropos">A propos de moi</a>
+                    <a class="nav-link" href="#formation">Mes formations</a>
+                    <a class="nav-link" href="#projet">Mes projets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
         <h1>
           <strong>NOA<br />MOREAU</strong>
         </h1>
 
-        <div id="box"></div>
       </section>
       <div id="curve2"></div>
       <div id="curve1"></div>
       <div id="curve3"></div>
       <div id="curve4"></div>
-      <section id="apropos" class="part"></section>
+      <section id="apropos" class="part">
+        <div id="presentation">
+
+        </div>
+        <div id="contact">
+
+        </div>
+        <div id="competence" >
+
+        </div>
+      </section>
       <section id="formation" class="part">
         <ul class="timeline">
           <!-- Item 1 -->
           <li>
             <div class="direction-r">
               <div class="flag-wrapper">
-                <span class="flag">BUT INFO</span>
+                <span class="flag"><a style="color: black;" target="_blank" href="https://iut.univ-lille.fr/">BUT INFO</a></span>
                 <span class="time-wrapper"
                   ><span class="time">2022 - aujourd'hui</span></span
                 >
@@ -55,7 +111,7 @@
           <li>
             <div class="direction-l">
               <div class="flag-wrapper">
-                <span class="flag">BAC generale</span>
+                <span class="flag"><a style="color: black;" target="_blank" href="https://lyceehenriwallon-valenciennes.fr/">BAC generale</a></span>
                 <span class="time-wrapper"
                   ><span class="time">2019 - 2022</span></span
                 >
