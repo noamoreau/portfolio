@@ -41,9 +41,7 @@
               aria-labelledby="offcanvasNavbarLabel"
             >
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  Offcanvas
-                </h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                 <button
                   type="button"
                   class="btn-close text-reset"
@@ -54,10 +52,7 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      aria-current="page"
-                      href="#"
+                    <a class="nav-link active" aria-current="page" href="#"
                       >Home</a
                     >
                   </li>
@@ -71,11 +66,10 @@
             </div>
           </div>
         </nav>
-        
+
         <h1>
           <strong>NOA<br />MOREAU</strong>
         </h1>
-
       </section>
       <div id="curve2"></div>
       <div id="curve1"></div>
@@ -83,13 +77,32 @@
       <div id="curve4"></div>
       <section id="apropos" class="part">
         <div id="presentation">
-
+          <p>
+            Étudiant en deuxième année de BUT informatique a l'IUT A de Lille.
+            Je recherche actuellement une stage d’une durée de 10 semaines dans
+            le domaine de l'informatique plus particulièrement le domaine
+            l’administration des réseaux et des systèmes, le déploiement des
+            applications.
+          </p>
         </div>
         <div id="contact">
-
+          <a href="mailto:noa.moreau.etu@univ-lille.fr"
+            ><img src="./images/mail.png"
+          /></a>
+          <a href="./res/CV_Noa_MOREAU.pdf" download="CV_Noa_MOREAU"
+            ><img src="./images/cv.png"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/noa-moreau-17ab832a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            ><img src="./images/linkedin.png"
+          /></a>
         </div>
-        <div id="competence" >
-
+        <div id="competence">
+          <img src="./images/bash.png" />
+          <img src="./images/nginx.png" />
+          <img src="./images/psql.png" />
+          <img src="./images/methode_agile.png" />
+          <img src="./images/markdown.png">
         </div>
       </section>
       <section id="formation" class="part">
@@ -98,7 +111,14 @@
           <li>
             <div class="direction-r">
               <div class="flag-wrapper">
-                <span class="flag"><a style="color: black;" target="_blank" href="https://iut.univ-lille.fr/">BUT INFO</a></span>
+                <span class="flag"
+                  ><a
+                    style="color: black"
+                    target="_blank"
+                    href="https://iut.univ-lille.fr/"
+                    >BUT INFO</a
+                  ></span
+                >
                 <span class="time-wrapper"
                   ><span class="time">2022 - aujourd'hui</span></span
                 >
@@ -111,7 +131,14 @@
           <li>
             <div class="direction-l">
               <div class="flag-wrapper">
-                <span class="flag"><a style="color: black;" target="_blank" href="https://lyceehenriwallon-valenciennes.fr/">BAC generale</a></span>
+                <span class="flag"
+                  ><a
+                    style="color: black"
+                    target="_blank"
+                    href="https://lyceehenriwallon-valenciennes.fr/"
+                    >BAC generale</a
+                  ></span
+                >
                 <span class="time-wrapper"
                   ><span class="time">2019 - 2022</span></span
                 >
@@ -126,6 +153,68 @@
         </ul>
       </section>
       <section id="projet" class="part">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="First slide"
+            ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="1"
+              aria-label="Second slide"
+            ></li>
+            <li
+              data-bs-target="#carouselId"
+              data-bs-slide-to="2"
+              aria-label="Third slide"
+            ></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img
+                src="holder.js/900x500/auto/#777:#555/text:First slide"
+                class="w-100 d-block"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="holder.js/900x500/auto/#666:#444/text:Second slide"
+                class="w-100 d-block"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="holder.js/900x500/auto/#666:#444/text:Third slide"
+                class="w-100 d-block"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
     </main>
     <footer>

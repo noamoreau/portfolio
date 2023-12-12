@@ -24,6 +24,35 @@ body {
 
 #apropos {
   background-color: white;
+  display: grid;
+  grid-template-columns: 13vw repeat(2, 1fr) 13vw;
+  grid-template-rows: 13vh repeat(2, 1fr) 13vw;
+}
+
+#apropos > #presentation {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#apropos > #contact {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+}
+
+#apropos > #contact > a > img {
+  height: 15vh;
+}
+
+#apropos > #competence {
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+}
+
+#apropos > #competence > img {
+  height: 10vh;
 }
 
 #curve1 {
@@ -384,6 +413,13 @@ body {
     padding: 1em;
 
     z-index: 15;
+  }
+
+  #apropos {
+    position: relative;
+    top: 3vh;
+    display: flex;
+    flex-direction: column;
   }
 }
 
