@@ -421,6 +421,16 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  #apropos > #competence {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #apropos > #competence > img {
+    height: 10vh;
+    width: 60vw;
+  }
 }
 
 @media screen and (min-width: 400px ?? max-width: 660px) {
@@ -434,4 +444,8 @@ body {
   background-image: url("../images/wickedbackground.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#carouselId {
+  top: 15vh;
 }
