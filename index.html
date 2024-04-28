@@ -20,6 +20,8 @@
   </head>
 
   <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./script/script.js"></script>
     <main>
       <section id="home" class="part">
         <nav class="navbar navbar-light bg-light fixed-top">
@@ -68,7 +70,9 @@
         </nav>
 
         <h1>
-          <strong>NOA<br />MOREAU</strong>
+          <p id="prenom"></p>
+          <br>
+          <p id="nom"></p>
         </h1>
       </section>
       <div id="curve2"></div>
@@ -155,56 +159,20 @@
         </ul>
       </section>
       <section id="projet" class="part">
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <a
-                target="_blank"
-                href="https://gitlab.univ-lille.fr/etu/2023-2024/s303/j-saintmaxin-moreau">
-              <img
-                src="./images/Projet1.png"
-                class="w-75 d-block"
-                alt="First slide"
-                style="margin: 0 auto"
-              /></a>
-            </div>
-            <div class="carousel-item">
-              <a
-                target="_blank"
-                href="https://gitlab.univ-lille.fr/2023-projet-agile-de-rentree/groupe-19"
-                ><img
-                  src="./images/projet2.png"
-                  class="w-75 d-block"
-                  alt="Second slide"
-                  style="margin: 0 auto"
-              /></a>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselId"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselId"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+        <div id="drag-container">
+    <div id="spin-container">
+      <img onclick="location.href='https://github.com/noamoreau/matrix-synapse'" src="./images/Projet1.png" alt="">
+      <img onclick="location.href='https://github.com/noamoreau/projetAgile'" src="./images/projet2.png" alt="">
+      <img onclick="location.href='https://github.com/noamoreau/chasse-monstre'" src="./images/Projet3.png" alt="">
+      <img onclick="location.href='https://github.com/noamoreau/odoo_script'" src="./images/Projet4.png" alt="">
+      <img onclick="location.href='https://github.com/noamoreau/simu_fluid'" src="./images/Projet5.png" alt="">
+
+      <p>Mes projets</p>
+    </div>
+    <div id="ground"></div>
+  </div>
       </section>
     </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -216,7 +184,5 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./script/script.js"></script>
   </body>
 </html>
