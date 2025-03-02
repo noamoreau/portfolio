@@ -584,3 +584,18 @@ body {
               transform: rotateY(0deg);
     }
   }
+
+  .competence-icons {
+    display: flex;
+    justify-content: center; /* Space competence icons evenly */
+    gap: 20px;
+}
+
+.competence-icons img {
+    height: 60px; /* Adjusted size */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.competence-icons img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
